@@ -30,13 +30,13 @@ const suma = pirmasSkaicius + antrasSkaicius;
 
 console.log(pirmasSkaicius);
 console.log(antrasSkaicius);
-console.log(suma);
+console.log('Viso:', suma);
 
 console.log(suma + pirmasSkaicius + antrasSkaicius);
 console.log(suma, '+', pirmasSkaicius, '+', antrasSkaicius,);
 
-const mathText = pirmasSkaicius + ' + ' + antrasSkaicius + ' =' + suma;
-console.log(mathText);
+const mathText = pirmasSkaicius + ' + ' + antrasSkaicius + ' = ' + suma;
+console.log('Viso:', mathText);
 
 console.log('---------------------');
 
@@ -55,10 +55,33 @@ console.log('---------------------');
 const pazymiai = [5, 5, 8, 9, 10, 6];
 console.log(pazymiai);
 
-const abc = ["a", "l", "p", "f", 'd', 'e',];
-console.log(abc);
 
 const pirmasPazymys = pazymiai [0];
 console.log(pirmasPazymys);
 
+const antrasPazymys = pazymiai [1];
+console.log(antrasPazymys);
+
+const treciasPazymys = pazymiai [2];
+console.log(treciasPazymys);
+
+const ketvirtasPazymys = pazymiai [3];
+console.log(ketvirtasPazymys);
+
+const penktasPazymys = pazymiai [4];
+console.log(penktasPazymys);
+
 console.log(pazymiai);
+
+
+const abc = ["a", "l", "p", "f", 'd', 'g',];
+console.log(abc);
+
+//Is mums zinomos siu raidziu abeceles paskutine yra "f".
+
+const abcIlgis = abc.length;
+const paskutineRaidesPozicija = abcIlgis - 1;
+const paskutineRaide = abc [paskutineRaidesPozicija];
+
+const abcatsakymas = 'Is mums zinomos ' + abcIlgis + ' raidziu abeceles paskutine yra "' + paskutineRaide + '".';
+console.log(abcatsakymas); 
