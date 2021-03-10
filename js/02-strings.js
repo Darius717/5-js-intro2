@@ -9,8 +9,8 @@ const diena = 'desimta';
 const dayString = 'Siandien yra: ' + menuo + ' ' + diena + '.';
 console.log(dayString);
 
-// Cia yra dvyguba (") kabute.
-const dvygubaKabute = 'Cia yra dvyguba (") kabute.';
+// Cia yra dviguba (") kabute.
+const dvygubaKabute = 'Cia yra dviguba (") kabute.';
 console.log(dvygubaKabute);
 
 // Cia yra vienguba (') kabute.
@@ -22,8 +22,8 @@ const viengubaDvyguba = "Turiu vienguba (') ir dviguba (\") kabutes.";
 console.log(viengubaDvyguba);
 
 // Turiu dviguba (") ir vienguba (') kabutes.
-const dvygubaVienguba = 'Turiu dviguba (") ir vienguba (\') kabutes.';
-console.log(dvygubaVienguba);
+const dvigubaVienguba = 'Turiu dviguba (") ir vienguba (\') kabutes.';
+console.log(dvigubaVienguba);
 
 // Max saugumas dviguba (") ir vienguba (') kabutes.
 const maxKabutes1 = 'Max saugumas dviguba (\") ir vienguba (\') kabutes.';
@@ -45,7 +45,7 @@ console.log('-------------');
 
 
 // Mano vardas: Petras.
-const vardas = 'Maryte';
+const vardas = 'Petras';
 const petrasIntro = 'Mano vardas: ' + vardas + '.';
 console.log(petrasIntro);
 
