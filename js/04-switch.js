@@ -8,7 +8,7 @@ switch () {case, break, default}
 
 */
 
-const animal = 'cat'
+const animal = 'wolf'
 
 switch (animal) {
     case "cat":
@@ -21,25 +21,50 @@ switch (animal) {
         console.log('au au au');
         break;  
     default:
-        console.log('ne tas gyvunas');
+        console.log('Ne tas gyvunas');
         break;
-}
+    }
+
+console.log('--------------');
+
+if (animal === 'cat') {
+    console.log('Miau miau🐱');
+} else if (animal === 'wolf') {
+    console.log('auuuuuuuuuuuuu🐺');
+} else {
+            console.log('Nezinomas gyvnunas');
+        }
+
+
+
 
 console.log('---------------');
 
-const diena = 1;
+const diena = 6;
 
 switch (diena) {
     case 1:
-        console.log('pirm');
-        break;
+            console.log('pirmadienis');
+            break;
     case 2:
-        console.log('antr');
-        break
+            console.log('antradienis');
+            break;
     case 3:
-        console.log('trec');
-        break
-    default:
+            console.log('treciadienis');
+            break;
+    case 4:
+            console.log('ketvirtadienis');
+            break;
+    case 5:
+            console.log('penktadienis');
+            break;
+    case 6:
+            console.log('sestadienis');
+            break;
+    case 7:
+            console.log('sekmadienis🎉🎊🥳');
+            break;
+        default:
         console.log('Nera tokios dienos savaiteje');
         break;
 }
@@ -85,7 +110,7 @@ switch (diena) {
         console.log('Lygines dienos');
         break;
     default:
-            console.log('Lygines dienos');
+            console.log('Tokios dienos nera zemeje');
 }
 
 console.log('-----------------');
@@ -100,15 +125,15 @@ switch (process) {
     case 2:
         console.log('Isideti arbatos');
     case 3:
-        console.log('Isisdeti saldikli');
+        console.log('Isideti saldikli');
     case 4:
         console.log('Ipilti vandens');
     case 5:
         console.log('issimaisyti');
     case 6:
-        console.log('gerti');
+        console.log('megautis arbata');
         break;
     default:
-            console.log('Ane, viskas padaryta');
+            console.log('Laikas geti arbata');
 
 }

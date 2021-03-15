@@ -2,7 +2,7 @@
 Ternary Operator: ? (klaustukas)
 palyginimas ? ar daryti jei tenkinama logika : ka daryti jei logikos netenkinama
 
-
+palyginimas ? true :
 
 */
 
