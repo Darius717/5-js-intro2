@@ -92,7 +92,7 @@ if (akys === "Melynos") {
 } else if (akys === 'Pilkos') {
     console.log('Nieko gero');
 } else if (akys === 'Raudonos'){
-    console.log(👩‍💻👩‍💻);
+    console.log('👩‍💻👩‍💻');
 } else {
     console.log('Tavo akys puikios😅');
 }
@@ -157,3 +157,4 @@ if (akys === 'Melynos' ||
     akys === 'Raudonos') {
     console.log('Tu turi vienas is man zinomu akiu spalvu!');
 }
+
