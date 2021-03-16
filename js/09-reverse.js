@@ -21,8 +21,9 @@ console.log('------------');
 const text2 = 'abcdefg'
 let reverse2 = '';
 
-for (i = 0; i < text2.length; i++) {
-        reverse2 += text2[text.length - 1 - i];
+for ( let i = text.length - 1; i >= 0; i--) {
+        console.log(i, text[i]);
+        reverse2 += text2[i];
 }
 
 console.log(text2, '->', reverse2 );
@@ -34,8 +35,33 @@ console.log('--------------');
 const text3 = 'abcdefg'
 let reverse3 = '';
 
-for (i = 0; i < text3.length; i++) {
-        reverse3 = text3[i] + reverse3;
+for (let i = text3.length; i > 0; i--) {
+        console.log(i, text3[i - 1]);
+        reverse3 += text3[i -1];
 }
 
 console.log(text3, '->', reverse3 );
+
+console.log('---------------');
+
+const text4 = 'abcdefg'
+let reverse4 = '';
+
+for (i = 0; i < text4.length; i++) {
+        reverse4 += text4[text4.length - 1 - i];
+}
+
+console.log(text4, '->', reverse4 );
+
+console.log('------------');
+
+const text5 = 'abcdefg'
+let reverse5 = '';
+
+for (i = 0; i < text5.length; i++) {
+        reverse5 = text5[i] + reverse5;
+}
+
+console.log(text5, '->', reverse5 );
+
+console.log('------------');

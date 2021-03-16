@@ -11,9 +11,9 @@ iii. Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 7 yra 2 
 
 */
 
-const nuo = 0;
-const iki = 11;
-const daliklis = 3;
+const nuo = 1;
+const iki = 9;
+const daliklis = 2;
 let kiekis = 0;
 
 for (let i = nuo; i <= iki; i++) {
