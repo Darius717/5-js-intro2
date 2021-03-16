@@ -25,6 +25,9 @@ const d = 5;
 const ats2 = c > d ? 'daugiau' : 'nedaugiau'; // inline if
 
 console.log(ats2);
+ 
+
+
 
 
 const  pazymiai = [7, 10, 7];

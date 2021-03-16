@@ -104,6 +104,20 @@ zodis += abc[abcIndex++];
 console.log(zodis);
 
 
+console.log('-----------------');
+
+const abc2 = ['r', 'y', 't', 'a', 's'];
+
+let zodis2 = '';
+let abcIndex2 = 0;
+ 
+zodis2 += abc2[abcIndex2++];
+zodis2 += abc2[abcIndex2++];
+zodis2 += abc2[abcIndex2++];
+zodis2 += abc2[abcIndex2++];
+zodis2 += abc2[abcIndex2++];
+
+console.log(zodis2);
 console.log('---------------------');
 
 let a  = 4;

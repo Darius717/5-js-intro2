@@ -40,7 +40,7 @@ if (animal === 'cat') {
 
 console.log('---------------');
 
-const diena = 6;
+const diena = 3;
 
 switch (diena) {
     case 1:
@@ -92,7 +92,14 @@ switch (diena) {
 
 console.log('-------------');
 
-//if (day === 1 || day === 2 )
+if (diena === 1 || diena === 2 || diena === 3 || diena === 4 || diena ===5) {
+    console.log('Darbo diena😅');
+} else if (diena === 6 || diena === 7) {
+    console.log('Savaitgalis😎');
+} else {
+    console.log('Tokios dienos zemeje nera');
+}
+
 
 console.log('-----------');
 
@@ -125,7 +132,7 @@ switch (process) {
     case 2:
         console.log('Isideti arbatos');
     case 3:
-        console.log('Isideti saldikli');
+        console.log('Isideti medaus');
     case 4:
         console.log('Ipilti vandens');
     case 5:
@@ -134,6 +141,6 @@ switch (process) {
         console.log('megautis arbata');
         break;
     default:
-            console.log('Laikas geti arbata');
+            console.log('Laikas gerti arbata');
 
 }
