@@ -25,4 +25,4 @@ function labas (vardas, amzius, gyvVieta) {
 
 labas('Petras', 88, 'Kaunas');
 labas('Maryte', 75, 'Siauliai'); 
-labas('Alfonsas', 60);
+labas('Alfonsas', 60, 'Linksmuciai');
