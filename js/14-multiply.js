@@ -22,12 +22,12 @@ function daugyba (a, b) {
         return 'Antras parametras turi buti skaiciaus tipo';
     }
 
-    //if ( isNaN(b) || b === Infinity || b === -Infinity) {
-    //    return `Antras parametras turi buti normalus skaiciaus tipo ir negali buti ${b}`
-    //}
+            //if ( isNaN(b) || b === Infinity || b === -Infinity) {
+            //    return `Antras parametras turi buti normalus skaiciaus tipo ir negali buti ${b}`
+            //}
     
-    if (!isFinite(a) ) {
-        return `Pirmasis parametras turi buti normalus skaiciaus tipo ir negali buti ${a}`;
+    if (!isFinite(b) ) {
+        return `Pirmasis parametras turi buti normalus skaiciaus tipo ir negali buti ${b}`;
     }
 
     //logika
