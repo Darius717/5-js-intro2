@@ -4,9 +4,9 @@ function pazymiuVidurkis(vardas, pazymiai) {
     for (let i = 0; i < pazymiai.length; i++ ) {
         suma += pazymiai[i];
     }
-
     const average = suma / pazymiai.length;
-
+    
+    // Vardenis: pazymiu vidurkis yra 6.
     console.log(`${vardas}: pazymiu vidrkis yra ${average}.`);
 }
 

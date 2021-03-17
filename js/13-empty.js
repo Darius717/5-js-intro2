@@ -3,3 +3,4 @@ function tusciaFunkcija () {
 }
 
 console.log(tusciaFunkcija());
+console.log(tusciaFunkcija(452616));
