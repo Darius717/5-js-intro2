@@ -6,9 +6,17 @@ function daugyba (a, b) {
         return 'Pirmasis parametras turi buti skaiciaus tipo'
     }
 
-    if ( isNaN (a) || a === -Infinity || a === Infinity ) {
-        return `Pirmasis parametras turi buti normalus skaiciaus tipo ir negali buti ${a}`
-    }
+    //if ( isNaN (a) || a === -Infinity || a === Infinity ) {
+    //    return `Pirmasis parametras turi buti normalus skaiciaus tipo ir negali buti ${a}`
+    //}
+
+    //if ('' + a === 'NaN' || Math.abs(a) === Infinity ) {
+   //     return `Pirmasis parametras turi buti normalus skaiciaus tipo ir negali buti ${a}`
+   // }
+
+   if (!isFinite(a) ) {
+         return `Pirmasis parametras turi buti normalus skaiciaus tipo ir negali buti ${a}`
+     }
 
     if ( typeof b !== 'number' ) {
         return 'Antras parametras turi buti skaiciaus tipo'
@@ -18,7 +26,6 @@ function daugyba (a, b) {
         return `Antras parametras turi buti normalus skaiciaus tipo ir negali buti ${b}`
     }
     
-
     //logika
     const rez = a * b;
 
