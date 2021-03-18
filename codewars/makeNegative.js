@@ -16,5 +16,5 @@ console.log(makeNegative(-3.14), '->', -3.14);
 console.log(makeNegative(0), '->', 0);
 
 
-//kitas geresni naudotinas variantas 
+//kitas geresnis naudotinas variantas 
 // return num <= 0 ? num : -num;
