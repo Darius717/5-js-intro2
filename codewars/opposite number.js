@@ -11,3 +11,6 @@ function opposite(number) {
   console.log(opposite(1), -1,)
   console.log(opposite(-0), -1,)
   console.log(opposite(-5.5), -3,5,)
+
+
+  // return(-number);
