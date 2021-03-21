@@ -1,4 +1,4 @@
-/*function check(a, x) {
+function check(a, x) {
     for (let i = 0; i < a.length; i++) {
         if (a[i] === x) {
             return true;
@@ -16,17 +16,3 @@ console.log(check([66, 101], 66), true);
     //return a.includes(x);
     //return a.indexOf(x) > -1 ? true : false;
 
-    */
-
-    function stringToArray(string){
-        // split string
-    const str = string; 
-	const arr = str.split(" "); 
-	return (arr); 
-
-        // code code code
-    
-    }
-
-console.log(stringToArray("Robin Singh"), ["Robin", "Singh"]);
-console.log(stringToArray("I love arrays they are my favorite"), ["I", "love", "arrays", "they", "are", "my", "favorite"])
