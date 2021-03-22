@@ -2,46 +2,23 @@
 Gimines medyje reikia rasti kas buvo/yra vyriausias?
 */
 
+
 function memberCount(asmuo) {
-    let biggestAge = asmuo.age;
-    let childAge = 0;
+    let nariuKiekis = 1;
 
     if (asmuo.children) {
-        for (let i = 0; i < asmuo.children.length; i++) {
-            const child = asmuo.children[i];
-
-            childAge = memberCount(child);
-
-            if (childAge > biggestAge) {
-                biggestAge = childAge;
-            }
+        for (let i = 0; i < children.length; i++) {
+            const chil = asmuo.children[i];
+            console.log(child);
+            nariuKiekis += memberCount(child);
         }
+
     }
 
-    return biggestAge;
-}
 
-function oldestWithName(asmuo) {
-    let oldestName = asmuo.name;
-    let biggestAge = asmuo.age;
+    return nariuKiekis;
 
-    if (asmuo.children) {
-        for (let i = 0; i < asmuo.children.length; i++) {
-            const child = asmuo.children[i];
-
-            const oldestChild = oldestWithName(child);
-
-            if (oldestChild.age > biggestAge) {
-                biggestAge = oldestChild.age;
-                oldestName = oldestChild.name;
-            }
-        }
-    }
-
-    return {
-        name: oldestName,
-        age: biggestAge
-    };
+        
 }
 
 const gimine1 = {
@@ -85,8 +62,5 @@ const gimine1 = {
     ]
 }
 
-const vyriausias = memberCount(gimine1);
-console.log(vyriausias);
-
-const vyriausiasAsmuo = oldestWithName(gimine1);
-console.log(vyriausiasAsmuo);
+const kiekNariu = memberCount(gimine1);
+console.log(memberCount);
