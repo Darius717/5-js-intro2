@@ -21,7 +21,7 @@ function bigNum(list) {
 
 
         //ar jis didesnis uz au zinoma didziausia skaiciu
-        if (number >= biggest) {
+        if (number > biggest) {
             secondBiggest = biggest;
             biggest = number;
         } else if (number > secondBiggest && number < biggest) {
@@ -37,64 +37,14 @@ function bigNum(list) {
         }
 
         //result
-        return biggest;
+        return secondBiggest;
 }
 
 
-console.log(bigNum('pomidoras' ) );
-console.log(bigNum(484562 ) );
-console.log(bigNum(true ) );
-console.log(bigNum(false ) );
-console.log(bigNum(undefined ) );
-console.log(bigNum( ) );
-console.log(bigNum(bigNum ) );
-console.log(bigNum(null) );
-console.log(bigNum( {}) );
-console.log(bigNum( [] ));
 
 console.log(bigNum( [ 1 ] ), 1);
-console.log(bigNum( [ 1, 2, 3 ] ), 3);
-console.log(bigNum( [ -5, 78, 14, 0, 18 ] ), 78);
-console.log(bigNum( [ 69, 69, 69, 69, 66 ] ), 69 );
-console.log(bigNum( [ -1, -2, -3, -4, -5, -6, -7, -8 ] ), -1 );
-console.log(bigNum( [ -11, -2, -35, -4, -5, -6, -7, -8 ] ), -2 );
-
-console.log(bigNum( [ 1, 8, 3, Infinity ] ), 8 );
-console.log(bigNum( [ 1, Infinity, 3, 8 ] ), 8 );
-console.log(bigNum( [ Infinity, 8, 3, 1 ] ), 8 );
-
-console.log(bigNum( [ 1, 8, 3, 'pomidoras' ] ), 8 );
-console.log(bigNum( [ 1, 'pomidoras', 3, 8 ] ), 8 );
-console.log(bigNum( [ 'pomidoras', 8, 3, 1 ] ), 8 );
-
-console.log(bigNum( [ 1, 8, 3, 5, true ] ), 8 );
-console.log(bigNum( [ 1, 8, true, 3, 5 ] ), 8 );
-console.log(bigNum( [ true, 1, 8, 3, 5 ] ), 8 );
-
-console.log(bigNum( [ 1, 8, 3, 5, null ] ), 8 );
-console.log(bigNum( [ 1, 8, null, 3, 5 ] ), 8 );
-console.log(bigNum( [ null, 1, 8, 3, 5 ] ), 8 );
-
-console.log(bigNum( [ 1, 8, 3, 5, undefined ] ), 8 );
-console.log(bigNum( [ 1, 8, undefined, 3, 5 ] ), 8 );
-console.log(bigNum( [ undefined, 1, 8, 3, 5 ] ), 8 );
-
-console.log(bigNum( [ 1, 8, 3, 5, NaN ] ), 8 );
-console.log(bigNum( [ 1, 8, NaN, 3, 5 ] ), 8 );
-console.log(bigNum( [ NaN, 1, 8, 3, 5 ] ), 8 );
-
-console.log(bigNum( [ 1, 8, 3, 5, '' ] ), 5 );
-console.log(bigNum( [ 1, 8, '', 3, 5 ] ), 5 );
-console.log(bigNum( [ '', 1, 8, 3, 5 ] ), 5 );
-
-console.log(bigNum( [Infinity, null, 'sads', true, 888 ] ), 888 );
-console.log(bigNum( [Infinity, null, 888, 'sads', true ] ), 888 );
-console.log(bigNum( [888, Infinity, null, 'sads', true ] ), 888 );
-
-console.log(bigNum( ['888', Infinity, null, 'sads', true ] ));
-
-
-//recursion
-console.log(bigNum( [-5, 78, [14, 999], 0, 18] ), 999);
+console.log(bigNum( [ 1, 2, 3 ] ), 2);
+console.log(bigNum( [ -5, 78, 14, 0, 18 ] ), 18);
+console.log(bigNum( [ 69, 69, 69, 69, 66 ] ), 66 );
 
 
