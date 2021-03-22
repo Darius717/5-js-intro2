@@ -21,8 +21,8 @@ function bigNum(list) {
 
 
         //ar jis didesnis uz au zinoma didziausia skaiciu
-        if (number > biggest) {
-            secondBiggest = biggest
+        if (number >= biggest) {
+            secondBiggest = biggest;
             biggest = number;
         } else if (number > secondBiggest && number < biggest) {
             secondBiggest = number;
@@ -83,9 +83,9 @@ console.log(bigNum( [ 1, 8, 3, 5, NaN ] ), 8 );
 console.log(bigNum( [ 1, 8, NaN, 3, 5 ] ), 8 );
 console.log(bigNum( [ NaN, 1, 8, 3, 5 ] ), 8 );
 
-console.log(bigNum( [ 1, 8, 3, 5, '' ] ), 8 );
-console.log(bigNum( [ 1, 8, '', 3, 5 ] ), 8 );
-console.log(bigNum( [ '', 1, 8, 3, 5 ] ), 8 );
+console.log(bigNum( [ 1, 8, 3, 5, '' ] ), 5 );
+console.log(bigNum( [ 1, 8, '', 3, 5 ] ), 5 );
+console.log(bigNum( [ '', 1, 8, 3, 5 ] ), 5 );
 
 console.log(bigNum( [Infinity, null, 'sads', true, 888 ] ), 888 );
 console.log(bigNum( [Infinity, null, 888, 'sads', true ] ), 888 );
