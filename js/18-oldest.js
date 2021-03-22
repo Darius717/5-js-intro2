@@ -2,7 +2,7 @@
 Gimines medyje reikia rasti kas buvo/yra vyriausias?
 */
 
-function memberCount(asmuo) {
+function oldest(asmuo) {
     let biggestAge = asmuo.age;
     let childAge = 0;
 
@@ -10,7 +10,7 @@ function memberCount(asmuo) {
         for (let i = 0; i < asmuo.children.length; i++) {
             const child = asmuo.children[i];
 
-            childAge = memberCount(child);
+            childAge = oldest(child);
 
             if (childAge > biggestAge) {
                 biggestAge = childAge;
@@ -85,7 +85,7 @@ const gimine1 = {
     ]
 }
 
-const vyriausias = memberCount(gimine1);
+const vyriausias = oldest(gimine1);
 console.log(vyriausias);
 
 const vyriausiasAsmuo = oldestWithName(gimine1);
