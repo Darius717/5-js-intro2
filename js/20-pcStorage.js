@@ -5,11 +5,11 @@ Folder uzima 0 vietos.
 
 function storage(folder) {
     let totalSize = 0;
-    console.log(folder);
+  
 
     for (let i = 0; i < folder.content.length; i++) {
         const child = folder.content[i];
-        console.log(child);
+        
 
         if (child.type === 'file'){
             totalSize += child.size;
@@ -85,3 +85,6 @@ const pc = {
         }
     ]
 }
+
+const totalKBs = storage(pc);
+console.log('Used space:', totalKBs, 'KB');
