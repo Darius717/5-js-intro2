@@ -8,7 +8,7 @@ function longestFile(folder) {
         for (let i = 0; i < folder.content.length; i++) {
             const child = folder.content[i];
             if (child.type === 'file') {
-                const childNameLength = child.name.length
+                const childNameLength = child.name.length;
                 if (childNameLength > nameLength) {
                 nameLength = childNameLength;
                 }
@@ -92,4 +92,4 @@ const pc = {
 }
 
 const totalKBs = longestFile(pc)
-console.log('longest name', totalKBs);
+console.log('longest name', totalKBs, 'symbols');
