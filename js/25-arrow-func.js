@@ -61,3 +61,6 @@ const  paskutine = paskutineRaide(vardas);
 
 console.log(raide);
 console.log(paskutine);
+
+
+
